@@ -16,10 +16,10 @@ X=np.array(X) #900x5
 y=np.array(y)
 
 phi=X #900X5
-phi=np.append(phi2,X**2,axis=1) #900X10
-phi=np.append(phi2, np.exp(X), axis=1) #900x15
-phi=np.append(phi2, np.cos(X), axis=1) #900X20
-phi=np.append(phi2, np.ones((900,1)), axis=1) #900x21
+phi=np.append(phi,X**2,axis=1) #900X10
+phi=np.append(phi, np.exp(X), axis=1) #900x15
+phi=np.append(phi, np.cos(X), axis=1) #900X20
+phi=np.append(phi, np.ones((900,1)), axis=1) #900x21
 
 #we need to split into a test set and a train set
 #to do so we could use eg. k-fold corss validation --> often k=5 or k=10
